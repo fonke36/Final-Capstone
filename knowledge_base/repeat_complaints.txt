@@ -1,0 +1,3 @@
+Repeat Complaints
+
+A repeat complaint occurs when a customer contacts support again about the same unresolved issue. The support agent should review the previous ticket history before asking the customer to repeat information already provided. If the original resolution did not address the problem, the agent should reassess the case rather than simply closing another ticket. Repeated unresolved complaints should be considered for escalation when normal support has failed to resolve the issue.

@@ -1,0 +1,3 @@
+Service Credit
+
+Service credits may be considered when a verified service problem causes significant customer inconvenience and the applicable policy allows compensation. The support agent should confirm the issue before offering a credit and should clearly communicate any limitations or conditions. Any approved service credit should be recorded with the related support ticket for future reference.

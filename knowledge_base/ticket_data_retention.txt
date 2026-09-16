@@ -1,0 +1,3 @@
+Ticket Data Retention
+
+Support ticket records should be retained only for the period required by applicable business, legal, and operational requirements, with access limited to authorized personnel and systems that need the information for legitimate support purposes. Records that are no longer required should be handled according to the organization's approved data-retention and deletion procedures.

@@ -1,0 +1,3 @@
+Customer Communication Channels
+
+Customers can receive support through the application's in-app support system and other officially provided support channels. The support team should use the communication channel associated with the customer's ticket whenever possible so that the conversation remains connected to the case. Sensitive account or payment information should not be requested through unofficial communication channels. If a customer moves the conversation to an unofficial channel, the agent should direct them back to an approved support channel.

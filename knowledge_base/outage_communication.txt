@@ -1,0 +1,3 @@
+Outage Communication
+
+During a confirmed service outage, customers should receive clear information about the affected service and the current support status. Communication should avoid unverified claims and should be updated when reliable information becomes available. Major outages should be communicated through official customer communication channels to reduce confusion and duplicate support requests. Support agents should use the latest approved outage information when responding to individual customer tickets.

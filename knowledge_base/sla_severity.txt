@@ -1,0 +1,3 @@
+SLA by Severity
+
+Critical tickets should receive an initial response within 1 hour and remain actively monitored until resolved or transferred to the appropriate team. High-priority tickets should receive an initial response within 4 hours, while Medium tickets should receive a response within 12 hours. Low-priority tickets should receive a response within 24 hours under normal support conditions.

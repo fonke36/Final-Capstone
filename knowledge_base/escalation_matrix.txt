@@ -1,0 +1,3 @@
+Escalation Matrix
+
+Tickets should be escalated when they involve a safety risk, repeated unresolved complaints, significant payment problems, or a missed SLA. Critical safety cases require immediate escalation to the appropriate senior support team. A High-priority case may also be escalated when the responsible team cannot resolve it within the applicable SLA. Repeated customer contacts about the same unresolved issue should be reviewed for escalation. The escalation decision should be recorded against the support ticket so that later agents can understand why the case was transferred.

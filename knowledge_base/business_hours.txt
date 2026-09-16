@@ -1,0 +1,3 @@
+Business Hours and Holiday Support
+
+Routine support requests are handled during standard business support hours, and public holidays may result in longer response times because staffing can be reduced. Safety-critical incidents and major service-impacting issues should continue to receive priority handling even outside routine support hours.

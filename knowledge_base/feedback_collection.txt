@@ -1,0 +1,3 @@
+Feedback Collection
+
+Customer feedback can be collected after a support interaction or ticket resolution. Feedback should help identify recurring service problems, support-quality issues, and opportunities for improvement. Agents should not pressure customers to provide positive feedback or influence their responses. Negative feedback should be treated as useful information rather than automatically considered a support failure. Feedback records should remain associated with the relevant support process when operationally appropriate.

@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Generated RAG database
+chroma_db/
+
+# Generated logs
+logs/
+
+# SQLite database
+*.sqlite3
+
+# Environment / secrets
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

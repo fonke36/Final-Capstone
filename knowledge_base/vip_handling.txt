@@ -1,0 +1,3 @@
+VIP Handling
+
+VIP customers should receive consistent and professional support while following the same safety and compliance requirements as other customers. Their cases may receive faster routing when the applicable support policy allows it, but VIP status does not automatically change the resolution rules. VIP status should never be used as a reason to bypass required verification, safety procedures, or escalation rules.

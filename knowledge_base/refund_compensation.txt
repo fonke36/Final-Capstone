@@ -1,0 +1,3 @@
+Refund and Compensation
+
+Refund requests should be checked against the trip and payment information available in the support system before approval. When a customer qualifies for compensation, the support team should explain the reason for the compensation and the expected processing time clearly. Compensation should be proportional to the verified service issue and should follow the applicable support policy.
