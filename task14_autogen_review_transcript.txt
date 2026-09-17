@@ -1,0 +1,121 @@
+======================================================================
+PART 2.14 - AUTOGEN REVIEW STAGE
+======================================================================
+
+
+----------------------------------------------------------------------
+CASE 1: GROUNDED DRAFT — APPROVAL
+----------------------------------------------------------------------
+
+AUTOGEN TEAM CONFIGURATION
+----------------------------------------------------------------------
+Team: RoundRobinGroupChat
+Agents: 2
+Agent 1: Policy_Compliance_Reviewer
+Agent 2: Final_Editor
+max_turns: 2
+custom_message_types: [StructuredMessage[YourVerdictModel]]
+
+AUTOGEN REVIEW INPUT
+----------------------------------------------------------------------
+Review the CrewAI Composer draft against the original retrieved context.
+
+CREWAI DRAFT:
+Refunds and compensation are handled according to the applicable Ola support policy and the circumstances of the individual case.
+
+ORIGINAL RETRIEVED CONTEXT:
+Source: refund_compensation.txt
+Similarity: 0.6294
+Content: Refunds and compensation are handled according to the applicable support policy and case circumstances.
+
+Produce a structured verdict with approved, final_answer, and reason.
+
+AUTOGEN TEAM EXECUTION
+----------------------------------------------------------------------
+TextMessage: id='f44602c4-4a5e-436e-b102-0aca0791d983' source='user' models_usage=None metadata={} created_at=datetime.datetime(2026, 9, 17, 19, 34, 41, 372792, tzinfo=datetime.timezone.utc) content='Review the CrewAI Composer draft against the original retrieved context.\n\nCREWAI DRAFT:\nRefunds and compensation are handled according to the applicable Ola support policy and the circumstances of the individual case.\n\nORIGINAL RETRIEVED CONTEXT:\nSource: refund_compensation.txt\nSimilarity: 0.6294\nContent: Refunds and compensation are handled according to the applicable support policy and case circumstances.\n\nProduce a structured verdict with approved, final_answer, and reason.' type='TextMessage'
+TextMessage: id='7ba67d44-11a8-48b7-99d3-ecc62c9931e7' source='Policy_Compliance_Reviewer' models_usage=None metadata={} created_at=datetime.datetime(2026, 9, 17, 19, 34, 41, 407676, tzinfo=datetime.timezone.utc) content='Policy review completed. approved=True. reason=The CrewAI draft is consistent with the supplied retrieved Ola knowledge-base context and contains no deliberately unsupported claim.' type='TextMessage'
+StructuredMessage[YourVerdictModel]: id='e927026a-7221-4f12-b3bc-e65ee9c4b6d6' source='Final_Editor' models_usage=None metadata={} created_at=datetime.datetime(2026, 9, 17, 19, 34, 41, 420415, tzinfo=datetime.timezone.utc) content=YourVerdictModel(approved=True, final_answer='Refunds and compensation are handled according to the applicable Ola support policy and the circumstances of the individual case.', reason='The CrewAI draft is consistent with the supplied retrieved Ola knowledge-base context and contains no deliberately unsupported claim.') format_string=None type='StructuredMessage[YourVerdictModel]'
+
+STRUCTURED VERDICT:
+{'approved': True, 'final_answer': 'Refunds and compensation are handled according to the applicable Ola support policy and the circumstances of the individual case.', 'reason': 'The CrewAI draft is consistent with the supplied retrieved Ola knowledge-base context and contains no deliberately unsupported claim.'}
+
+APPROVAL TEST PASSED
+
+
+----------------------------------------------------------------------
+CASE 2: DELIBERATELY UNGROUNDED DRAFT — REVISION
+----------------------------------------------------------------------
+
+AUTOGEN TEAM CONFIGURATION
+----------------------------------------------------------------------
+Team: RoundRobinGroupChat
+Agents: 2
+Agent 1: Policy_Compliance_Reviewer
+Agent 2: Final_Editor
+max_turns: 2
+custom_message_types: [StructuredMessage[YourVerdictModel]]
+
+AUTOGEN REVIEW INPUT
+----------------------------------------------------------------------
+Review the CrewAI Composer draft against the original retrieved context.
+
+CREWAI DRAFT:
+Refunds and compensation are handled according to the applicable Ola support policy. Customers receive a 100% refund in every case.
+
+ORIGINAL RETRIEVED CONTEXT:
+Source: refund_compensation.txt
+Similarity: 0.6294
+Content: Refunds and compensation are handled according to the applicable support policy and case circumstances.
+
+Produce a structured verdict with approved, final_answer, and reason.
+
+AUTOGEN TEAM EXECUTION
+----------------------------------------------------------------------
+TextMessage: id='ddd648b0-ab70-4014-b44e-437a42eb42e7' source='user' models_usage=None metadata={} created_at=datetime.datetime(2026, 9, 17, 19, 34, 41, 448109, tzinfo=datetime.timezone.utc) content='Review the CrewAI Composer draft against the original retrieved context.\n\nCREWAI DRAFT:\nRefunds and compensation are handled according to the applicable Ola support policy. Customers receive a 100% refund in every case.\n\nORIGINAL RETRIEVED CONTEXT:\nSource: refund_compensation.txt\nSimilarity: 0.6294\nContent: Refunds and compensation are handled according to the applicable support policy and case circumstances.\n\nProduce a structured verdict with approved, final_answer, and reason.' type='TextMessage'
+TextMessage: id='8143a40b-6f53-4cb5-8126-79fc050becd9' source='Policy_Compliance_Reviewer' models_usage=None metadata={} created_at=datetime.datetime(2026, 9, 17, 19, 34, 41, 457605, tzinfo=datetime.timezone.utc) content='Policy review completed. approved=False. reason=The statement that customers receive a 100% refund was not supported by the supplied retrieved context.' type='TextMessage'
+StructuredMessage[YourVerdictModel]: id='ef63af9e-6d94-4bd6-87f1-f9eb5c13b46b' source='Final_Editor' models_usage=None metadata={} created_at=datetime.datetime(2026, 9, 17, 19, 34, 41, 462753, tzinfo=datetime.timezone.utc) content=YourVerdictModel(approved=False, final_answer='Refunds and compensation are handled according to the applicable Ola support policy and the circumstances of the individual case.', reason='The statement that customers receive a 100% refund was not supported by the supplied retrieved context.') format_string=None type='StructuredMessage[YourVerdictModel]'
+
+STRUCTURED VERDICT:
+{'approved': False, 'final_answer': 'Refunds and compensation are handled according to the applicable Ola support policy and the circumstances of the individual case.', 'reason': 'The statement that customers receive a 100% refund was not supported by the supplied retrieved context.'}
+
+REVISION TEST PASSED
+
+
+======================================================================
+TASK 14 DEMONSTRATION COMPLETE
+======================================================================
+
+Structured verdict fields verified:
+approved      : bool
+final_answer  : str
+reason        : str
+
+TASK 14 LOCAL TESTS PASSED
+
+======================================================================
+TASK 14 VERIFICATION SUMMARY
+======================================================================
+
+Status: PASS
+
+AutoGen review stage: PASS
+Agents: 2
+Agent 1: Policy_Compliance_Reviewer
+Agent 2: Final_Editor
+Team: RoundRobinGroupChat
+max_turns: 2
+Structured message: StructuredMessage[YourVerdictModel]
+
+Approval demonstration: PASS
+Revision demonstration: PASS
+
+Structured verdict fields:
+- approved: bool
+- final_answer: str
+- reason: str
+
+Deterministic local execution: PASS
+External LLM/API call: NONE
+API key required: NO
+
+Task 14 acceptance status: PASS
